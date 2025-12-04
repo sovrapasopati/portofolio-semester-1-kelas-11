@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+body {
+    color: black;
+    font-family: sans-serif;
+}
+
+/* bagian atas yang gak bisa di geser itu */
+
+.kontainer-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.header .kontainer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.portfolio {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+}
+
+.portfolio-2 {
+    color: #1e90ff;
+}
+
+.nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav button {
+    background-color: #f5f5f7;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+    border: none;
+}
+
+.nav button:hover {
+    color: white;
+    background-color: #1e90ff;
+}
+
+.nav p {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 4px 6px;
+    font-weight: 400;
+    justify-content: center;
+}
+
+/* section 1 : bagian judul */
+
+.section-1 {
+    background-color: #1e90ff;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 300px;
+    font-size: 25px;
+    line-height: 55px;
+    background-size: cover;
+}
+
+/* section 2 : bagian perkenalan */
+
+.section-2 {
+    padding-top: 80px;
+    text-align: center;
+    background-color: #f5f5f7;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.teks {
+    flex: 1;
+    margin-left: 75px;
+    text-align: left;
+}
+
+.teks h1 {
+    font-size: 70px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    max-width: 300px;
+    height: auto;
+}
+
+/* section 3 : apa yang saya bisa */
+
+.section-3 {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.judul-1 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.skill {
+    display: flex;
+    gap: 30px;
+    margin: 50px;
+}
+
+.skill-card {
+    background-color: #f5f5f7;
+    padding: 50px;
+    border-radius: 20px;
+    flex: 1;
+    /*Membuat ketiga kartu memiliki lebr yang sama  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.skill-card:hover {
+    transform: translatey(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.skill-icon {
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.skill-card p {
+    font-size: 16px;
+    color: #6e6e73
+}
+
+/* apa yg saya pelajari */
+
+.gallery-container {
+    align-items: center;
+    padding: 50px;
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+}
+
+.judul-2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.gallery {
+    display: flex;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    /* Efek zoom saat di-hover */
+    transition: transform 0.5s ease;
+}
+
+.gallery-item img {
+    width: 330px;
+    height: auto;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+/* bagian projek yang saya kerjakan */
+
+.section-4 {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.judul-3 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.projek {
+    display: flex;
+    gap: 30px;
+    margin: 50px;
+}
+
+.projek-card {
+    background-color: #f5f5f7;
+    padding: 25px;
+    border-radius: 20px;
+    flex: 1;
+    /*Membuat ketiga kartu memiliki lebr yang sama  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projek-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.projek-card:hover {
+    transform: translatey(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.projek-icon {
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.projek-card p {
+    font-size: 16px;
+    color: #6e6e73
+}
+
+.linkkode {
+    text-decoration: none;
+    color: black;
+}
+
+/* bagian pengalaman yang saya dapatkan */
+
+
+.section-5 {
+    color: white;
+    background-color: #1e90ff;
+    padding: 80px;
+    text-align: center;
+}
+
+.judul-4 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.pengalaman {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.pengalaman-card {
+    color: black;
+    background-color: #f5f5f7;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.pengalaman-card h3 {
+    margin-bottom: 10px;
+}
+
+.rating {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+/* bagian contak saya atau hubungi saya */
+
+.section-6 {
+    background-color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.judul-5 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.kontak {
+    display: flex;
+    gap: 30px;
+    margin: 50px;
+}
+
+.kontak-card {
+    background-color: #f5f5f7;
+    padding: 30px;
+    border-radius: 20px;
+    flex: 1;
+    /*Membuat ketiga kartu memiliki lebr yang sama  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: black;
+}
+
+.kontak-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.kontak-card:hover {
+    transform: translatey(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+.kontak-icon {
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.kontak-card a {
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+}
+
+/* bagian saran dan kritik */
+
+.section-7 {
+    text-align: center;
+    align-items: center;
+    background-color: #f5f5f7;
+    padding: 80px 0;
+}
+
+.judul-7 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 60px;
+}
+
+.form {
+    color: white;
+    background-color: #1e90ff;
+    text-align: left;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 30px;
+}
+
+.isiform {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    gap: 10px;
+}
+
+.isiform input {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f5f5f7;
+}
+
+.isiform textarea {
+    background-color: #f5f5f7;
+    border: none;
+    width: 765px;
+    height: 200px;
+    border-radius: 5px;
+    color: black;
+    padding: 15px;
+}
+
+.tombol-kirim {
+    color: black;
+    background-color: #f5f5f7;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+/* bagian footer atau penutup */
+
+.footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 80px 0;
+    padding-bottom: 20px;
+}
+
+.judul-6 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 60px;
+
+}
+
+.gallery-footer-item img {
+    width: 1000px;
+    height: auto;
+    padding: 30px;
+    border-radius: 50px;
+}
+
+.penutup {
+    background-color: #1e90ff;
+    color: white;
+    padding: 20px;
+    /* margin-top:20px; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+
+/* DARK MODE--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+body.dark {
+    color: white;
+    font-family: sans-serif;
+}
+
+/* bagian atas yang gak bisa di geser itu */
+
+body.dark .header {
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    border-bottom: 1px solid #141B2E;
+
+}
+
+body.dark .portfolio {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+}
+
+body.dark .portfolio-2 {
+    color: #ff8807;
+}
+
+body.dark .nav ul li p {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+
+body.dark .nav button {
+    background-color: white;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 6px;
+    border: none;
+}
+
+body.dark .nav button:hover {
+    color: white;
+    background-color: #ff8807;
+}
+
+/* section 1 : bagian judul */
+
+body.dark .section-1 {
+    background-color: #ff8807;
+    text-align: center;
+    color: white;
+    padding-top: 100px;
+    font-size: 25px;
+    line-height: 55px;
+    /* background-image: url(/images/bukukeren.jpg); */
+    background-size: cover;
+}
+
+/* section 2 : bagian perkenalan */
+
+body.dark .section-2 {
+    padding-top: 80px;
+    text-align: center;
+    background-color: #141B2E;
+}
+
+body.dark .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+/* section 3 : apa yang saya bisa */
+
+body.dark .section-3 {
+    background-color: #0A0F1F;
+    padding: 80px 0;
+    text-align: center;
+}
+
+body.dark .skill-card {
+    background-color: #141B2E;
+    padding: 50px;
+    border-radius: 20px;
+    flex: 1;
+    /*Membuat ketiga kartu memiliki lebr yang sama  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark .skill-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+}
+
+body.dark .skill-card:hover {
+    transform: translatey(-10px);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+}
+
+body.dark .skill-card p {
+    font-size: 16px;
+    color: #f5f5f7
+}
+
+/* apa yg saya pelajari */
+
+body.dark .gallery-container {
+    align-items: center;
+    padding: 50px;
+    background-color: #ff8807;
+    color: white;
+}
+
+/* bagian projek yang saya kerjakan */
+
+body.dark .section-4 {
+    background-color: #0A0F1F;
+    padding: 80px 0;
+    text-align: center;
+}
+
+body.dark .projek-card {
+    background-color: #141B2E;
+    padding: 25px;
+    border-radius: 20px;
+    flex: 1;
+    /*Membuat ketiga kartu memiliki lebr yang sama  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark .projek-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+}
+
+body.dark .projek-card:hover {
+    transform: translatey(-10px);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+}
+
+body.dark .projek-card p {
+    font-size: 16px;
+    color: #f5f5f7;
+}
+
+body.dark .linkkode {
+    text-decoration: none;
+    color: white;
+}
+
+/* bagian pengalaman yang saya dapatkan */
+
+
+body.dark .section-5 {
+    color: white;
+    background-color: #ff8807;
+    padding: 80px;
+    text-align: center;
+}
+
+body.dark .pengalaman-card {
+    color: #f5f5f7;
+    background-color: #141B2E;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+/* bagian contak saya atau hubungi saya */
+
+body.dark .section-6 {
+    background-color: #0A0F1F;
+    padding: 80px 0;
+    text-align: center;
+}
+
+body.dark .kontak-card {
+    background-color: #141B2E;
+    padding: 30px;
+    border-radius: 20px;
+    flex: 1;
+    /*Membuat ketiga kartu memiliki lebr yang sama  */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+}
+
+body.dark .kontak-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.8);
+}
+
+body.dark .kontak-card:hover {
+    transform: translatey(-10px);
+    box-shadow: 0 20px 30px rgba(255, 255, 255, 0.5);
+}
+
+body.dark .kontak-card a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+/* bagian saran dan kritik */
+
+body.dark .section-7 {
+    text-align: center;
+    align-items: center;
+    background-color: #141B2E;
+    padding: 80px 0;
+}
+
+body.dark .form {
+    color: white;
+    background-color: #ff8807;
+    text-align: left;
+    border-radius: 20px;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 30px;
+}
+
+body.dark .isiform input {
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #141B2E;
+}
+
+body.dark .isiform textarea {
+    background-color: #141B2E;
+    border: none;
+    width: 765px;
+    height: 200px;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+}
+
+body.dark .tombol-kirim {
+    color: white;
+    background-color: #141B2E;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    margin-top: 20px;
+}
+
+/* bagian footer atau penutup */
+
+body.dark .footer {
+    background-color: #0A0F1F;
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+    padding-bottom: 20px;
+}
+
+body.dark .penutup {
+    background-color: #ff8807;
+    color: white;
+    padding: 20px;
+    /* margin-top:20px; */
+    margin-left: 20px;
+    margin-right: 20px;
+}
